@@ -14,7 +14,7 @@ header{
 	float: right;
 }
 a {color:#000;
-    width:0.8rem;
+    width:0.7rem;
     line-height: .3rem;
     display: block;
     float: left;
@@ -25,7 +25,7 @@ a {color:#000;
 }
 /*nav*/
 nav{
- /* padding: .1rem .1rem;*/
+    font-size: .14rem;
 	 width: 100%;
 	 height: 0.6rem;
      border-bottom: 1px solid #EEEEEE;	
@@ -54,7 +54,7 @@ nav{
 .btn{
 	width: .3rem;
 	float: right;
-	margin-right: .3rem;
+	margin-right: .1rem;
 	margin-top: .1rem;
 }
 .books_rigth{
@@ -85,7 +85,8 @@ article{
       border-collapse:separate;
     border-spacing:.03rem;
 	font-size: .12rem;
-	width: 3rem;
+	/*width: 3rem;*/
+	margin-right: .1rem;
 	 display: block;
     overflow-x: auto;  
     white-space: nowrap; 
@@ -116,14 +117,16 @@ td{
 	position: relative;
 }
 .td_time:after{
-	content: "2小时";
-	background-color: #F56839;
-	color: #ffffff;
-	position: absolute;
-    width: .6rem;
-    left: 50%;
-    top: 0.05rem;
-	margin-left: -0.3rem;
+    content: "2小时";
+    background-color: #F56839;
+    color: #ffffff;
+    position: absolute;
+    width: .4rem;
+    left: 0;
+    right: 0;
+    top: 0.045rem;
+    bottom: 0;
+    margin: auto;
 }
 
 .footer_before{
