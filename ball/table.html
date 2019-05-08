@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="ddd">djasoidj</div>
+ <div class="temp">
+ 
+ </div>
+
+
+</body>
+</html>
+<!--
+     引入模板引擎:一般用于在网络请求之后，展示相同的多条数据
+-->
+<script type="text/javascript" src="js/zepto.js" ></script>
+<script type="text/javascript" src="js/template-web.js" ></script>
+
+
+
+<!--定义模板-->
+<script type="text/html" id="personTemplate">
+<ul>
+  {{each list}} 
+    <li>{{$value.cloum}}</li>
+  {{/each}} 
+</ul>
+</script>
+
+<script type="text/javascript">
+
+    //定义数据
+   var personDatas= [{cloum: "1A号", x: "08:30-10:30", price: "￥1200.00"},{cloum: "1A号", x: "10:30-12:30", price: "￥1200.00"}]
+
+ 
+
+        var p = {
+            name:"刘强",
+            sex:"男",
+            age:23
+        };
+  $("#ddd").click(function(){  
+    console.log()
+   // $.ajax({
+   //           type: "GET",
+   //           url: "https://api.apiopen.top/getSongPoetry?page=1&count=20",
+   //           dataType: "json",
+   //           success: function(data){
+   //                      console.log(data)
+   //                      var d=data.result
+   //                        var result =  template("personTemplate",d);
+                      
+   //                    //将返回的模板结果添加到界面中
+   //                    $(".temp").html(result)
+   //                    }
+   //       });
+})
+    /**
+     * 利用模板引擎 引用数据填充到模板中
+     *
+     * 参数一：模板id
+     * 参数二：数据
+     */
+    //var personDatas=JSON.stringify(personData)
+    // console.log(JSON.stringify(personData))
+    // console.log(personData)
+
+          var result =  template("personTemplate",{list:personDatas});
+           console.log(personDatas)
+          //将返回的模板结果添加到界面中
+          $(".temp").html(result)
+    
+
+</script>

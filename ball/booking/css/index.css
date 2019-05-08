@@ -1,0 +1,151 @@
+header{
+	position: relative;
+	height: .5rem;
+	padding: .2rem .1rem;
+	border-bottom: 1px solid #EEEEEE;
+	background-color: #fff;
+}
+.header_left{
+	position: absolute;
+    width: 70%;
+}
+.logo{
+   position: absolute;
+   width: .5rem;
+   height: .5rem;
+   border-radius: .5rem;
+}
+.title{
+	margin-left: .6rem;
+
+}
+.title_pl{
+	overflow:hidden;
+	 white-space: nowrap;
+	text-overflow:ellipsis; 
+}
+.title_h{
+	margin-bottom: .05rem;
+}
+.title_phone{
+  font-size: .1rem;
+}
+.title_local{
+  font-size: .1rem;
+  color: #999999;
+}
+
+.header_center{
+	position: absolute;
+	right: .4rem;
+	width: 16%;
+	top: .25rem;
+
+}
+.icon_cen{
+  font-size: .3rem;
+}
+.header_right{
+	right: 0.1rem;
+	position: absolute;
+	border-left: 1px solid #EEEEEE;
+  text-align: center;
+  float: right;
+  font-size: .12rem;
+}
+.icon_right{
+	font-size: .3rem;
+}
+
+/*nav*/
+
+nav{
+	font-size: .12rem;
+	padding: .1rem 0;
+	border-bottom: 1px solid #E5E5E5;
+	background-color: #fff;
+}
+.nav_l{
+	text-align: center;
+	padding-bottom: .1rem;
+	width: .6rem;
+	border-bottom: 2px solid #FF6E3C
+}
+/*article*/
+article{
+	background-color: #fff;
+	min-height: 7.8rem;
+}
+h2{
+	position: relative;
+	font-size: .12rem;
+	padding: .1rem .1rem;
+	border-bottom: 1px solid #EEEEEE;
+}
+.art_dc{
+  font-weight: 600;
+  position: absolute;
+  top: .2rem;
+  margin-left: .1rem;
+}
+
+.books li{
+  padding:.4rem .2rem;
+  border:1px solid #EEEEEE;
+  color: #999999;
+  position: relative;
+}
+.books li:nth-child(n+4){
+ display: none;
+}
+.books_time{
+	/*position: absolute;*/
+
+
+}
+.books_btu{
+	color: #1AAD19;
+	font-size: .12rem;
+	position: absolute;
+	right: .2rem;
+	top: .4rem;
+	padding: .05rem .15rem;
+	border: 1px solid #1AAD19;
+	border-radius: .05rem;
+}
+
+/*article_toggle*/
+.article_toggle{
+  text-align: center;
+  border-bottom: 1px solid #EEEEEE;
+  padding: .1rem;
+}
+.icon_down{
+   display: block;
+}
+.icon_up{
+   display: none;
+}
+
+
+/*footer*/
+footer{
+	position: fixed;
+	bottom: 0;
+	border-top: 1px solid #EEEEEE; 
+	background-color: #fff;
+	display: flex;
+	width: 100%;
+	text-align: center;
+	font-size: .12rem;
+	padding: .1rem;
+}
+.venue{
+   width: 33%;
+}
+.server{
+   width: 33%;
+}
+.my{
+  width: 33%;
+}
